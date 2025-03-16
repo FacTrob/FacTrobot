@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="홍">
+    <meta name="keywords" content="포트폴리오, 웹디자인, 웹개발, UI/UX, hong">
+    <meta name="author" content="Hong">
+    <title>Hong's Impactful Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 전체 레이아웃을 감싸는 wrapper -->
+    <div id="wrapper">
+        <!-- 헤더 -->
+        <header id="header" class="fade-in">
+            <div class="header-content">
+                <h1 class="title">Hong's Portfolio</h1>
+                <p class="subtitle">Where Creativity Meets Innovation</p>
+            </div>
+        </header>
+        <!-- 내비게이션 및 콘텐츠 영역 -->
+        <main id="container-scroller">
+            <!-- 내비게이션 -->
+            <aside id="left">
+                <nav id="menu" aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link" aria-current="page">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- 메인 콘텐츠 -->
+            <section id="right">
+                <!-- Home 섹션 -->
+                <article id="home" class="content-box">
+                    <h1 class="content-title">Welcome to My World</h1>
+                    <p class="content-text">
+                        이곳은 평범함을 거부하는 홍의 포트폴리오입니다. 
+                        창의적인 아이디어와 혁신적인 기술로 가득 찬 공간을 탐험해보세요!
+                    </p>
+                    <a href="#portfolio" class="cta-button">Explore Now</a>
+                </article>
+                <!-- About 섹션 -->
+                <article id="about" class="content-box">
+                    <h2 class="content-title">About Me</h2>
+                    <p class="content-text">
+                        사용자 경험을 최우선으로 생각하며, 아름답고 기능적인 디지털 작품을 만듭니다.
+                    </p>
+                </article>
+                <!-- Skills 섹션 -->
+                <article id="skills" class="content-box">
+                    <h2 class="content-title">My Skills</h2>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fas fa-paint-brush"></i> UI/UX Design</li>
+                    </ul>
+                </article>
+                <!-- Portfolio 섹션 -->
+                <article id="portfolio" class="content-box">
+                    <h2 class="content-title">Portfolio</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" data-modal="project1">
+                            <img src="src" alt="프로젝트 1 미리보기">
+                            <h3>프로젝트 1</h3>
+                            <p>웹 디자인 프로젝트</p>
+                        </div>
+                        <div class="portfolio-item" data-modal="project2">
+                            <img src="src" alt="프로젝트 2 미리보기">
+                            <h3>프로젝트 2</h3>
+                            <p>반응형 웹 개발</p>
+                        </div>
+                        <div class="portfolio-item" data-modal="project3">
+                            <img src="src" alt="프로젝트 3 미리보기">
+                            <h3>프로젝트 3</h3>
+                            <p>UI/UX 프로토타입</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Contact 섹션 -->
+                <article id="contact" class="content-box">
+                    <h2 class="content-title">Contact Me</h2>
+                    <p class="content-text">
+                        저와 함께 일하고 싶으시다면 언제든지 연락주세요. 
+                        새로운 프로젝트에 대한 상담이나 간단한 인사도 환영입니다!
+                    </p>
+                </article>
+                </section>
+        </main>
+    </div>
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>© 2025 Hong. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:example@hong.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- 모달 창 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- 프로젝트 세부 내용 동적 삽입 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JS 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
