@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Hong's Portfolio Loaded!");
 
@@ -30,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-    // 모달 창 기능
+
+// *************************************************************
+
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
