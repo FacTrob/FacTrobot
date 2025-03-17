@@ -34,7 +34,10 @@ module.exports = async (req, res) => {
         const drive = google.drive({ version: 'v3', auth });
 
 
-        const fileMetadata = { name: file.originalFilename || 'unnamed_file' };
+        const fileMetadata = { 
+            name: file.originalFilename || 'unnamed_file',
+            parents: ['storage']};
+            
         const media = {
             mimeType: file.mimetype || 'application/octet-stream',
             body: fs.createReadStream(file.filepath),
