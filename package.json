@@ -1,0 +1,11 @@
+{
+    "name": "hong-portfolio",
+    "version": "1.0.0",
+    "dependencies": {
+        "googleapis": "^129.0.0",
+        "formidable": "^3.5.1"
+    },
+    "engines": {
+        "node": "18.x"
+    }
+  }
