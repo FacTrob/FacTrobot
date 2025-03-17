@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
 
         // 파일목록로딩
         const response = await drive.files.list({
-            q: "'storage' in owners", // 서비스 계정이 소유한 파일
+            q: "'storage1kHIImPGptcA18Djjp6Wvgg_FWz8pM6-g' in owners", // 서비스 계정이 소유한 파일
             fields: 'files(id, name, mimeType, createdTime)',
         });
 

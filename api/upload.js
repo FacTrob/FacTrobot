@@ -36,8 +36,8 @@ module.exports = async (req, res) => {
 
         const fileMetadata = { 
             name: file.originalFilename || 'unnamed_file',
-            parents: ['storage']};
-            
+            parents: ['1kHIImPGptcA18Djjp6Wvgg_FWz8pM6-g']};
+
         const media = {
             mimeType: file.mimetype || 'application/octet-stream',
             body: fs.createReadStream(file.filepath),
