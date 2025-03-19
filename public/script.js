@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
             setTimeout(() => link.classList.remove('active'), 1000);
         });
-        link.addEventListener('mouseover', () => link.classList.add('active'));
+        link.addEventListener('mouseover', () => link.classList.add('ac     tive'));
         link.addEventListener('mouseout', () => link.classList.remove('active'));
     });
 
